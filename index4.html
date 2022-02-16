@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Fibonacci</title>
+</head>
+<body>
+    <script>
+        function fibonacci(n){
+            if(n < 2){
+                return n
+            }
+            let anterior = 1;
+            let penultimo = 0;
+            for(let i= 2; i <= n; i++){
+                if(i == n){
+                    return penultimo + anterior;
+                }
+                let temp = penultimo;
+                penultimo = anterior;
+                anterior = temp + penultimo;
+            }
+        }
+
+        function calcularVetor(vetor,numero){
+
+            for(let i = 0; i < vetor.length; i++){
+        novoValor = vetor[i];
+        if(novoValor > 5){
+            novoValor = novoValor * numero
+        }
+        vetor[i] = novoValor;
+    }
+    return vetor
+        }
+
+        
+    </script>
+</body>
+</html>

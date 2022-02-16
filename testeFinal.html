@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Final</title>
+</head>
+<body>
+    <script>
+        function testeFinal(valorstring,valornumerico){
+
+            switch(valorstring){
+
+                case "mundojs":
+                    console.log("MundoJS");
+                    return valornumerico;
+                    break;
+                case "soma":
+                    numeroaux = (valornumerico/2) + (valornumerico*valornumerico);
+                    return numeroaux;
+                    break;
+                case "vetor":
+                    let novovetor = [];
+                    for(let i = 0; i < 5; i++){
+                        novovetor[i] = valornumerico + (i * 2);
+                    }
+                    return novovetor;
+                    break;
+                case "booleano":
+                    let outrovetor = [];
+                    let somavalor = 0
+                    for(let i = 0; i < 5; i++){
+                        outrovetor[i] = valornumerico + (i * 2);
+                        somavalor = somavalor + outrovetor[i];
+                    }
+                    if(somavalor > 35){
+                        return true;
+                    }else{
+                        return false;
+                    }
+                    break;
+                default:
+                    return -1
+                    break
+
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

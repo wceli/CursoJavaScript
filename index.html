@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoJS</title>
+</head>
+<body>
+    <script>
+        console.log("Olá Mundo")
+        function somarSubVetores(vetor){
+            novovetor = [];
+           for(let i = 0; i < vetor.length; i++){
+               let aux = vetor[i];
+               let valorsoma = 0;
+               for(let j = 0; j < aux.length; j++ ){
+                   valorsoma = valorsoma + aux[j];
+               }
+              novovetor[i] = valorsoma;
+           }
+           return novovetor;
+        }
+       
+    </script>
+</body>
+</html>
